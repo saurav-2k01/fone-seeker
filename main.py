@@ -13,7 +13,7 @@ def fone():
         except:
             print("Please enter a valid input.")
     else:
-        return "Enter dial code and mobile number"
+        pass
 #"1","6108390872"
 
 if __name__=="__main__":
