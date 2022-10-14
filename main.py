@@ -1,6 +1,10 @@
 from flask import Flask, request,jsonify
 
 app = Flask(__name__)
+@app.route('/')
+def index():
+    return "<marquee><H1>This is Fone-Seeker.</H1></marquee>"
+
 @app.route('/fone')
 def fone():
     dial = request.args.get("dial-code", None)
